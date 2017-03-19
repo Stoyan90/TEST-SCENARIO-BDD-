@@ -1,4 +1,4 @@
-Feauture: Login
+Feauture: Login for www.hanovete.com
 
 ID:1 - positive test scenario
 Title:User should be able to enter successfully
