@@ -1,0 +1,52 @@
+Feauture: Login
+
+ID:1 - positive test scenario
+Title:User should be able to enter successfully
+Given i open the web site at http://www.hanovete.com/?logout=1
+When i click "username" textbox
+And i enter valide username
+When i click "password" textbox
+And i enter valide password
+And i click button "ENTER"
+And i select random world
+Then the user is successful login
+
+ID:2 - negative test scenario
+Title:User sould NOT able to enter successfully
+Given i open the web site at http://www.hanovete.com/?logout=1
+When i click "username" textbox
+And i enter invalide username
+When i click "password" textbox
+And i enter valide password
+And i click button "ENTER"
+And i select random world
+Then i sould see the error messege "Invalide username and/or password"
+
+ID:3 - negative test scenario
+Title:User sould NOT able to enter successfully
+Given i open the web site at http://www.hanovete.com/?logout=1
+When i click "username" textbox
+And i enter valide username
+When i click "password" textbox
+And i enter valide password
+And i click button "ENTER"
+And i select random world
+Then i sould see the error messege "Invalide username and/or password"
+
+ID:4 - negative test scenario
+Title:User sould NOT able to enter successfully
+Given i open the web site at http://www.hanovete.com/?logout=1
+When i click "username" textbox
+And i enter valide username
+And i click button "ENTER"
+And i select random world
+Then i sould see the error messege "Invalide username and/or password"
+
+ID:5 - negative test scenario
+Title:User sould NOT able to enter successfully
+Given i open the web site at http://www.hanovete.com/?logout=1
+When i click "password" textbox
+And i enter valide password
+And i click button "ENTER"
+And i select random world
+Then i sould see the error messege "Invalide username and/or password"
